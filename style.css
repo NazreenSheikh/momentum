@@ -2,12 +2,63 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* border: solid 2px red; */
 }
 
 body {
     text-transform: capitalize;
-    background: rgb(127, 15, 150);
-    margin-top: 4px;
+    color: black;
+}
+
+body>img {
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#weather span {
+    font-size: 1.3rem;
+    padding: 1px;
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 11rem;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 16rem;
+    font-size: 1.3rem;
+}
+
+#todo-form input,
+#todo-form button {
+    font-size: 1.3rem;
+    padding: 3px;
+}
+
+li {
+    list-style: none;
 }
 
 .hidden {

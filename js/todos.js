@@ -40,6 +40,9 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault()
+  if (toDoInput.value === '') {
+    return
+  }
   const newTodo = toDoInput.value
   toDoInput.value = ''
   const newTodoObj = {
