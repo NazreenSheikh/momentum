@@ -7,7 +7,7 @@
 
 body {
     text-transform: capitalize;
-    color: black;
+    color: white;
 }
 
 
@@ -42,6 +42,7 @@ body>img {
     align-items: center;
     position: relative;
     top: 9rem;
+    font-size: medium;
 }
 
 #todo-list {
@@ -50,14 +51,34 @@ body>img {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 16rem;
-    font-size: 1.3rem;
+    top: 11rem;
+}
+
+#todo-list>li>button {
+    border: none;
+    margin-left: 1rem;
 }
 
 #todo-form input,
 #todo-form button {
-    font-size: 1.3rem;
-    padding: 3px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+#form-input,
+.greet {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7rem;
+}
+
+.greet {
+    display: flex;
+    font-size: 4rem;
+    letter-spacing: 0.5px;
+    color: white;
 }
 
 #Quotes {
@@ -71,8 +92,25 @@ body>img {
     color: white;
 }
 
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 4.5rem;
+    font-size: xx-large;
+}
+
 li {
+    font-size: 1.2rem;
     list-style: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1px 7px;
+    margin-top: 2px;
+    background: rgb(255, 255, 255);
+    position: relative;
 }
 
 .hidden {
