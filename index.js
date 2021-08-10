@@ -1,0 +1,6 @@
+import './js/greet.js'
+import './js/Clock.js'
+import './js/background.js'
+import './js/Quotes.js'
+import './js/weather.js'
+import './js/todos.js'
