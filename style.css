@@ -5,9 +5,9 @@
     /* border: solid 2px red; */
 }
 
-body {
+#docBody {
     text-transform: capitalize;
-    color: white;
+    color: black;
 }
 
 
@@ -62,7 +62,7 @@ body>img {
 
 #todo-form input,
 #todo-form button {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 5px;
 }
 
@@ -76,10 +76,14 @@ body>img {
 }
 
 .greet {
+    /* font-family: 'Courier New', Courier, monospace; */
     display: flex;
     font-size: 4rem;
-    letter-spacing: 0.5px;
-    color: white;
+    letter-spacing: 0.7px;
+}
+
+#form-input input {
+    font-size: 1.2rem;
 }
 
 #Quotes {
@@ -119,5 +123,5 @@ li {
 }
 
 .fstyle {
-    font-family: 'Courier New', Courier, monospace;
+    display: flex;
 }
