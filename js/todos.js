@@ -2,14 +2,6 @@ const toDoBtn = document.querySelector('#todo-form button')
 const toDoInput = document.querySelector('#todo-form input')
 const toDoList = document.getElementById('todo-list')
 
-{
-  /* <form id="todo-form">
-<input type="text" placeholder="Write a To Do and Press Enter" required />
-<button><i class="uil uil-plus"></i></button>
-</form>
-<ul id="todo-list"></ul> */
-}
-
 const TODOS_KEY = 'todos'
 
 let toDos = []
