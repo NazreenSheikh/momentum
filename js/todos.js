@@ -32,6 +32,7 @@ function paintToDo(newTodo) {
 
 function handleToDoSubmit(event) {
   event.preventDefault()
+  const isAllowed = true
   if (toDoInput.value === '') {
     return
   }
@@ -41,9 +42,15 @@ function handleToDoSubmit(event) {
     text: newTodo,
     id: Date.now(),
   }
-  toDos.push(newTodoObj)
-  paintToDo(newTodoObj)
-  saveToDos()
+  if (toDos.length > 9) {
+    alert("can't store more todos")
+    isAllowed = false
+  }
+  if (isAllowed) {
+    toDos.push(newTodoObj)
+    paintToDo(newTodoObj)
+    saveToDos()
+  }
 }
 
 toDoBtn.addEventListener('click', handleToDoSubmit)
